@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.example.shayne.myapplication.view.MjpegView
+        android:id="@+id/mjpegview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/flash_bg" />
+
+    <RadioGroup
+        android:id="@+id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/maintab_toolbar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobtn0"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/shot_press"
+            android:text="@string/take_picture" />
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon2"
+            android:text="@string/record_video" />
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/channel_press"
+            android:text="@string/pictures" />
+
+        <RadioButton
+            android:id="@+id/radiobtn3"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/zoom_press"
+            android:text="@string/fullscreen" />
+
+        <RadioButton
+            android:id="@+id/radiobtn4"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/set_press"
+            android:text="@string/setting" />
+    </RadioGroup>
+
+</RelativeLayout>
